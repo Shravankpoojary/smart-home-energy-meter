@@ -84,7 +84,11 @@ All values are scaled ×100 and sent as 4-byte binary frames at 9600 baud.
 - Field 3 → Apparent Power (VA)
 
 ## Block Diagram
-![Block Diagram](block_diagram.png)
+<p align="center">
+  <img width="1488" height="683" alt="ACS712 Current Monitor Block Diagram" src="https://github.com/user-attachments/assets/e94602c7-0b33-4191-95f5-90b4df127e03" />
+  <br>
+  <em>Figure 1: Block diagram of the ACS712 AC Current Monitor system.</em>
+</p>
   
 ## Setup Instructions
 ### STM32 (Sender)
