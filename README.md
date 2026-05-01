@@ -121,6 +121,13 @@ All values are scaled ×100 and sent as 4-byte binary frames at 9600 baud.
    - `YOUR_WIFI_PASSWORD` → your WiFi password
    - `TS_CHANNEL_ID` → your ThingSpeak Channel ID
    - `TS_WRITE_API_KEY` → your ThingSpeak Write API Key
+  
+<p align="center">
+  <img width="784" height="336" alt="ThingSpeak Credentials Location" src="https://github.com/user-attachments/assets/90ddd28a-8a26-428a-a25e-998c389549e9" />
+  <br>
+  <em>Figure 1: Locating ThingSpeak Credentials for Firmware.</em>
+</p>
+
 5. Select board: **NodeMCU 1.0 (ESP-12E Module)**
 6. Upload the code
    
