@@ -152,8 +152,8 @@ All values are scaled ×100 and sent as 4-byte binary frames at 9600 baud.
 **ThingSpeak Cloud Dashboard:**
 
 <p align="center">
-  <img width="100%" alt="ThingSpeak Cloud Dashboard showing Current and Power" src="YOUR_IMAGE_URL_HERE" />
-  <br>
+<img width="4080" height="1836" alt="IMG_20260501_160446-2" src="https://github.com/user-attachments/assets/170c9b94-3bed-46a5-8fbb-e1e4ddf70c0c" />
+   <br>
   <em>Figure 5: ThingSpeak cloud dashboard visualizing real-time telemetry from the ESP8266, including live gauges for RMS current, Peak current, and Apparent Power.</em>
 </p>
 
