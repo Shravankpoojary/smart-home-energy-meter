@@ -96,7 +96,7 @@ All values are scaled ×100 and sent as 4-byte binary frames at 9600 baud.
 <p align="center">
 <img width="4080" height="1836" alt="IMG_20260501_153227" src="https://github.com/user-attachments/assets/051a21e5-b5bd-4af7-bd3f-81712901f642" />
   <br>
-  <em>Figure X: Physical hardware implementation of the Smart Energy Meter, showing the integrated STM32 Nucleo, ESP8266 NodeMCU, ACS712 current sensor, and 16x2 LCD display.</em>
+  <em>Figure 2: Physical hardware implementation of the Smart Energy Meter, showing the integrated STM32 Nucleo, ESP8266 NodeMCU, ACS712 current sensor, and 16x2 LCD display.</em>
 </p>
 
   
@@ -125,7 +125,7 @@ All values are scaled ×100 and sent as 4-byte binary frames at 9600 baud.
 <p align="center">
   <img width="784" height="336" alt="ThingSpeak Credentials Location" src="https://github.com/user-attachments/assets/90ddd28a-8a26-428a-a25e-998c389549e9" />
   <br>
-  <em>Figure 1: Locating ThingSpeak Credentials for Firmware.</em>
+  <em>Figure 3: Locating ThingSpeak Credentials for Firmware.</em>
 </p>
 
 5. Select board: **NodeMCU 1.0 (ESP-12E Module)**
@@ -146,7 +146,7 @@ All values are scaled ×100 and sent as 4-byte binary frames at 9600 baud.
 <p align="center">
   <img width="100%" alt="STM32 and ESP8266 Serial Monitor Logs" src="https://github.com/user-attachments/assets/4962d468-ea57-4052-a725-d3423b7d338d" />
   <br>
-  <em>Figure X: Serial monitor outputs from both the STM32 and ESP8266 modules displaying the parsed RMS current, peak current, and apparent power.</em>
+  <em>Figure 4: Serial monitor outputs from both the STM32 and ESP8266 modules displaying the parsed RMS current, peak current, and apparent power.</em>
 </p>
 
 **ThingSpeak Cloud Dashboard:**
@@ -154,7 +154,7 @@ All values are scaled ×100 and sent as 4-byte binary frames at 9600 baud.
 <p align="center">
   <img width="100%" alt="ThingSpeak Cloud Dashboard showing Current and Power" src="YOUR_IMAGE_URL_HERE" />
   <br>
-  <em>Figure X: ThingSpeak cloud dashboard visualizing real-time telemetry from the ESP8266, including live gauges for RMS current, Peak current, and Apparent Power.</em>
+  <em>Figure 5: ThingSpeak cloud dashboard visualizing real-time telemetry from the ESP8266, including live gauges for RMS current, Peak current, and Apparent Power.</em>
 </p>
 
 **LCD Display:**
@@ -162,7 +162,7 @@ All values are scaled ×100 and sent as 4-byte binary frames at 9600 baud.
 <p align="center">
   <img width="100%" alt="16x2 LCD Display showing RMS and Power" src="https://github.com/user-attachments/assets/66478931-dd2a-457c-ac2d-4bbfea7b868e" />
   <br>
-  <em>Figure X: Local 16x2 I2C LCD interface displaying real-time RMS current (A), Peak current (A), and Apparent Power (VA).</em>
+  <em>Figure 6: Local 16x2 I2C LCD interface displaying real-time RMS current (A), Peak current (A), and Apparent Power (VA).</em>
 </p>
 
 
