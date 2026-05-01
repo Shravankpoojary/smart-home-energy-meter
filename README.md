@@ -94,7 +94,7 @@ All values are scaled ×100 and sent as 4-byte binary frames at 9600 baud.
 ## System Setup Snapshot
 
 <p align="center">
-  <img width="100%" alt="Smart Energy Meter Hardware Setup" src="YOUR_IMAGE_URL_HERE" />
+<img width="4080" height="1836" alt="IMG_20260501_153227" src="https://github.com/user-attachments/assets/051a21e5-b5bd-4af7-bd3f-81712901f642" />
   <br>
   <em>Figure X: Physical hardware implementation of the Smart Energy Meter, showing the integrated STM32 Nucleo, ESP8266 NodeMCU, ACS712 current sensor, and 16x2 LCD display.</em>
 </p>
