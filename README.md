@@ -165,4 +165,15 @@ All values are scaled ×100 and sent as 4-byte binary frames at 9600 baud.
   <em>Figure 6: Local 16x2 I2C LCD interface displaying real-time RMS current (A), Peak current (A), and Apparent Power (VA).</em>
 </p>
 
+## Project Demonstration
+
+<p align="center">
+  <b>▶️ CLICK THE IMAGE BELOW TO WATCH THE VIDEO DEMONSTRATION</b><br><br>
+  <a href="https://youtu.be/mwZI8RePCFI">
+    <img width="100%" alt="Smart Home Energy Meter Major Project Demo" src="https://img.youtube.com/vi/mwZI8RePCFI/maxresdefault.jpg" />
+  </a>
+  <br>
+  <em>YouTube video showing a full technical walkthrough of the Major Project: Smart Home Energy Meter, illustrating the integration of STM32 processing and ESP8266 cloud telemetry.</em>
+</p>
+
 
