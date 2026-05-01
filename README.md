@@ -89,6 +89,16 @@ All values are scaled ×100 and sent as 4-byte binary frames at 9600 baud.
   <br>
   <em>Figure 1: Block diagram of the ACS712 AC Current Monitor system.</em>
 </p>
+
+
+## System Setup Snapshot
+
+<p align="center">
+  <img width="100%" alt="Smart Energy Meter Hardware Setup" src="YOUR_IMAGE_URL_HERE" />
+  <br>
+  <em>Figure X: Physical hardware implementation of the Smart Energy Meter, showing the integrated STM32 Nucleo, ESP8266 NodeMCU, ACS712 current sensor, and 16x2 LCD display.</em>
+</p>
+
   
 ## Setup Instructions
 ### STM32 (Sender)
@@ -113,6 +123,7 @@ All values are scaled ×100 and sent as 4-byte binary frames at 9600 baud.
    - `TS_WRITE_API_KEY` → your ThingSpeak Write API Key
 5. Select board: **NodeMCU 1.0 (ESP-12E Module)**
 6. Upload the code
+   
 ### ThingSpeak
 1. Create a free account at https://thingspeak.com
 2. Create a new channel with 3 fields:
@@ -122,26 +133,29 @@ All values are scaled ×100 and sent as 4-byte binary frames at 9600 baud.
 3. Copy the Channel ID and Write API Key into the ESP8266 sketch
 
 ## Expected Output
-**STM32 Serial Monitor (115200 baud):**
-```
-RMS: 2.341 A  |  Peak: 3.309 A  |  Power: 538.43 VA
-RMS: 2.338 A  |  Peak: 3.305 A  |  Power: 537.74 VA
-```
 
-**ESP8266 Serial Monitor (115200 baud):**
-```
-Connecting to WiFi: MyNetwork........
-WiFi connected. IP: 192.168.1.105
-Waiting for STM32 data...
-RMS: 2.341 A  |  Peak: 3.309 A  |  Power: 538.43 VA
-ThingSpeak upload OK
-[Diag] Bytes: 120 | Valid pkts: 30 | Invalid: 0 | WiFi: OK
-```
+**STM32 Serial Monitor and ESP8266 Serial Monitor (115200 baud):**
+
+<p align="center">
+  <img width="100%" alt="STM32 and ESP8266 Serial Monitor Logs" src="https://github.com/user-attachments/assets/4962d468-ea57-4052-a725-d3423b7d338d" />
+  <br>
+  <em>Figure X: Serial monitor outputs from both the STM32 and ESP8266 modules displaying the parsed RMS current, peak current, and apparent power.</em>
+</p>
+
+**ThingSpeak Cloud Dashboard:**
+
+<p align="center">
+  <img width="100%" alt="ThingSpeak Cloud Dashboard showing Current and Power" src="YOUR_IMAGE_URL_HERE" />
+  <br>
+  <em>Figure X: ThingSpeak cloud dashboard visualizing real-time telemetry from the ESP8266, including live gauges for RMS current, Peak current, and Apparent Power.</em>
+</p>
 
 **LCD Display:**
-```
-I:2.34A Pk:3.31A
-Power: 538.4 VA
-```
+
+<p align="center">
+  <img width="100%" alt="16x2 LCD Display showing RMS and Power" src="https://github.com/user-attachments/assets/66478931-dd2a-457c-ac2d-4bbfea7b868e" />
+  <br>
+  <em>Figure X: Local 16x2 I2C LCD interface displaying real-time RMS current (A), Peak current (A), and Apparent Power (VA).</em>
+</p>
 
 
