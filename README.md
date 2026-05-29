@@ -167,6 +167,13 @@ Color-Coded Alert Screen <--- On-Device TFT Output <--- Float32 TensorFlow Lite 
 
 ### Edge Telemetry Stream & Console Logging
 <p align="center">
+<img width="613" height="786" alt="Screenshot 2026-03-17 224932" src="https://github.com/user-attachments/assets/32c7cdb9-127e-40e5-b0b5-186144adec37" />
+  <br>
+  <em>Figure 6: High-speed UART frame transmissions showing continuous streaming logs and inference state outcomes.</em>
+</p>
+
+### Edge Telemetry Stream & Console Logging
+<p align="center">
 <img width="622" height="844" alt="Screenshot 2026-03-17 225159" src="https://github.com/user-attachments/assets/cc17e351-0f86-4715-a325-4a2c04969496" />
   <br>
   <em>Figure 6: High-speed UART frame transmissions showing continuous streaming logs and inference state outcomes.</em>
@@ -178,17 +185,6 @@ Color-Coded Alert Screen <--- On-Device TFT Output <--- Float32 TensorFlow Lite 
   <em>Figure 6: High-speed UART frame transmissions showing continuous streaming logs and inference state outcomes.</em>
 </p>
 
-### Edge Telemetry Stream & Console Logging
-<p align="center">
-<img width="613" height="786" alt="Screenshot 2026-03-17 224932" src="https://github.com/user-attachments/assets/32c7cdb9-127e-40e5-b0b5-186144adec37" />
-  <br>
-  <em>Figure 6: High-speed UART frame transmissions showing continuous streaming logs and inference state outcomes.</em>
-</p>
-### Hardware Verification Setup
-<p align="center">
-  <br>
-  <em>Figure 7: Full testbed implementation showing real-time acquisition and waveform visualization across the dual-modality framework.</em>
-</p>
 
 * **High-Fidelity Waves:** Clean real-time ECG trace tracking and dynamic R-peak detection plots rendered directly to the local display module.
 * **Validated Classification:** Proven capability to isolate high-probability events on edge devices (e.g., identifying Atrial Fibrillation anomalies with distinct confidence index values during testing loops).
