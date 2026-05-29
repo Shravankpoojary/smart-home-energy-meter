@@ -140,7 +140,13 @@ Color-Coded Alert Screen <--- On-Device TFT Output <--- Float32 TensorFlow Lite 
 
 ### Model Performance Metrics
 <p align="center">
-<img width="1318" height="690" alt="Screenshot 2026-03-16 165128" src="https://github.com/user-attachments/assets/05b73c0c-2c46-49f6-b1eb-2735b1cad4bc" />
+<img width="1412" height="875" alt="Screenshot 2026-03-16 160604" src="https://github.com/user-attachments/assets/75f343c0-fdcc-4bc9-8fd8-32ae14c51f46" />
+  <br>
+  <em>Figure 4: Quantized TinyML model validation results showing Confusion Matrix classification tracking and Epoch training progress.</em>
+</p>
+
+<p align="center">
+<img width="1318" height="690" alt="Screenshot 2026-03-16 165128" src="https://github.com/user-attachments/assets/b7f2906e-4b25-42e1-84ed-f3dec2aa77f6" />
   <br>
   <em>Figure 4: Quantized TinyML model validation results showing Confusion Matrix classification tracking and Epoch training progress.</em>
 </p>
