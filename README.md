@@ -83,7 +83,7 @@ To maintain high-speed throughput without dropping real-time samples, data is pa
 
 ### Block Diagram
 <p align="center">
-  <img width="1488" height="683" alt="Cardiac Analyzer Block Diagram" src="<img width="1481" height="810" alt="Screenshot 2026-05-29 145706" src="https://github.com/user-attachments/assets/0c57408b-9313-43a3-8e9c-f00a7b5e9306" />" />
+<img width="1481" height="810" alt="Screenshot 2026-05-29 145706" src="https://github.com/user-attachments/assets/01c6eeb2-34c7-48be-8a3d-26998c597620" />
   <br>
   <em>Figure 1: Comprehensive dual-MCU hardware architecture and signal processing routing pipeline.</em>
 </p>
