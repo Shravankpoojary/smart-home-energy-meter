@@ -160,14 +160,20 @@ Color-Coded Alert Screen <--- On-Device TFT Output <--- Float32 TensorFlow Lite 
 
 ### Edge Telemetry Stream & Console Logging
 <p align="center">
-  <img width="100%" alt="Serial Stream Telemetry Terminal Logs" src="https://github.com/user-attachments/assets/68e82e49-fe6b-401a-8266-6cb2790f95d3" />
+<img width="624" height="736" alt="Screenshot 2026-03-17 225311" src="https://github.com/user-attachments/assets/548b5051-fadd-460f-84b5-63cc18f4d442" />
+  <br>
+  <em>Figure 6: High-speed UART frame transmissions showing continuous streaming logs and inference state outcomes.</em>
+</p>
+
+### Edge Telemetry Stream & Console Logging
+<p align="center">
+<img width="624" height="736" alt="Screenshot 2026-03-17 225311" src="https://github.com/user-attachments/assets/548b5051-fadd-460f-84b5-63cc18f4d442" />
   <br>
   <em>Figure 6: High-speed UART frame transmissions showing continuous streaming logs and inference state outcomes.</em>
 </p>
 
 ### Hardware Verification Setup
 <p align="center">
-  <img width="100%" alt="Full Working Physical Hardware Prototype" src="https://github.com/user-attachments/assets/9a5f8075-6e66-4026-b852-149e6c1b3c26" />
   <br>
   <em>Figure 7: Full testbed implementation showing real-time acquisition and waveform visualization across the dual-modality framework.</em>
 </p>
