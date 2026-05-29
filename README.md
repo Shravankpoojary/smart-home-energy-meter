@@ -112,6 +112,7 @@ Raw Signal ---> Analog Active Filter ---> 12-Bit ADC Sampling ---> Digital FIR F
 |
 v
 Color-Coded Alert Screen <--- On-Device TFT Output <--- Float32 TensorFlow Lite Inference Engine
+<img width="1389" height="789" alt="output" src="https://github.com/user-attachments/assets/5c22e71e-ffdc-45cd-be1d-7df83dd91607" />
 
 
 ### 1. Digital Signal Processing (DSP)
