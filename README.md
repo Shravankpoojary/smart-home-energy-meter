@@ -1,3 +1,6 @@
+Here is the complete, modified `README.md` file. The 5 screenshots you uploaded have been strategically integrated into your existing file structure with professional engineering titles under **System Architecture & Visuals** and **Evaluation & Results**, including clean HTML alignment tags just like your major project repo.
+
+```markdown
 # Low-cost, portable and power efficient ECG Signal Analysis and Heartbeat sound Acquisition System for Cardiac Assessment
 
 ## 📌 Project Overview
@@ -83,21 +86,31 @@ To maintain high-speed throughput without dropping real-time samples, data is pa
 
 ### Block Diagram
 <p align="center">
-<img width="1481" height="810" alt="Screenshot 2026-05-29 145706" src="https://github.com/user-attachments/assets/01c6eeb2-34c7-48be-8a3d-26998c597620" />
+  <img width="1481" height="810" alt="Screenshot 2026-05-29 145706" src="https://github.com/user-attachments/assets/01c6eeb2-34c7-48be-8a3d-26998c597620" />
   <br>
   <em>Figure 1: Comprehensive dual-MCU hardware architecture and signal processing routing pipeline.</em>
 </p>
 
 ### Hardware Setup Snapshot
 <p align="center">
-<img width="1051" height="839" alt="Screenshot 2026-05-29 150419" src="https://github.com/user-attachments/assets/99678392-53c6-4065-8da0-6bcb807cd165" />
+  <img width="1051" height="839" alt="Screenshot 2026-05-29 150419" src="https://github.com/user-attachments/assets/99678392-53c6-4065-8da0-6bcb807cd165" />
   <br>
   <em>Figure 2: Physical hardware implementation showing the integrated STM32 Nucleo, ESP32 processing core, sensor arrays, and local TFT interface display.</em>
+</p>
+
+### Signal Hardware Interface & Schematic Overview
+<p align="center">
+  <img width="100%" alt="Circuit Schematic & Interface Layout" src="https://github.com/user-attachments/assets/2d73dd68-23a7-462b-9587-d647493cce77" />
+  <br>
+  <em>Figure 3: Inter-MCU serial routing layout, active amplification schematic, and display interface pinning configuration.</em>
 </p>
 
 ---
 
 ## 🧠 Digital Signal Processing & TinyML Pipeline
+
+
+```
 
 Raw Signal ---> Analog Active Filter ---> 12-Bit ADC Sampling ---> Digital FIR Filters ---> Pan-Tompkins Algorithm
 |
@@ -106,6 +119,7 @@ Raw Signal ---> Analog Active Filter ---> 12-Bit ADC Sampling ---> Digital FIR F
 v
 Color-Coded Alert Screen <--- On-Device TFT Output <--- Float32 TensorFlow Lite Inference Engine
 
+```
 
 ### 1. Digital Signal Processing (DSP)
 * **50 Hz Notch Filter (ECG):** Removes powerline AC hum from the environment. Implemented on the STM32 via an **81-tap FIR configuration** with a stopband window spanning `48 Hz - 52 Hz`.
@@ -126,6 +140,35 @@ Color-Coded Alert Screen <--- On-Device TFT Output <--- Float32 TensorFlow Lite 
 ---
 
 ## 📈 Evaluation & Results
+
+### Model Performance Metrics
+<p align="center">
+  <img width="100%" alt="Confusion Matrix & Training Metrics" src="https://github.com/user-attachments/assets/074a74fd-e4a8-4819-80fd-6fd80146f6dd" />
+  <br>
+  <em>Figure 4: Quantized TinyML model validation results showing Confusion Matrix classification tracking and Epoch training progress.</em>
+</p>
+
+### Live Diagnosis Telemetry Walkthrough
+<p align="center">
+  <img width="100%" alt="Live Classification Signal Outputs" src="https://github.com/user-attachments/assets/64767f99-77fc-4753-91fd-b251d501cf83" />
+  <br>
+  <em>Figure 5: Live ECG real-time tracking waveforms along with on-device risk assessment probability matrix indicators.</em>
+</p>
+
+### Edge Telemetry Stream & Console Logging
+<p align="center">
+  <img width="100%" alt="Serial Stream Telemetry Terminal Logs" src="https://github.com/user-attachments/assets/68e82e49-fe6b-401a-8266-6cb2790f95d3" />
+  <br>
+  <em>Figure 6: High-speed UART frame transmissions showing continuous streaming logs and inference state outcomes.</em>
+</p>
+
+### Hardware Verification Setup
+<p align="center">
+  <img width="100%" alt="Full Working Physical Hardware Prototype" src="https://github.com/user-attachments/assets/9a5f8075-6e66-4026-b852-149e6c1b3c26" />
+  <br>
+  <em>Figure 7: Full testbed implementation showing real-time acquisition and waveform visualization across the dual-modality framework.</em>
+</p>
+
 * **High-Fidelity Waves:** Clean real-time ECG trace tracking and dynamic R-peak detection plots rendered directly to the local display module.
 * **Validated Classification:** Proven capability to isolate high-probability events on edge devices (e.g., identifying Atrial Fibrillation anomalies with distinct confidence index values during testing loops).
 * **Power Savings:** Successfully triggers ultra-low-power idle states via the collaborative inter-MCU sleep timer loop, instantly waking on any button-based hardware interrupt.
@@ -170,3 +213,5 @@ Color-Coded Alert Screen <--- On-Device TFT Output <--- Float32 TensorFlow Lite 
   <br>
   <em>YouTube video showing a real-time walkthrough and analytical performance of the Cardiac AI Edge system.</em>
 </p>
+
+```
