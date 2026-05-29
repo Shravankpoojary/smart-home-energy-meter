@@ -1,6 +1,3 @@
-Here is the complete, modified `README.md` file. The 5 screenshots you uploaded have been strategically integrated into your existing file structure with professional engineering titles under **System Architecture & Visuals** and **Evaluation & Results**, including clean HTML alignment tags just like your major project repo.
-
-```markdown
 # Low-cost, portable and power efficient ECG Signal Analysis and Heartbeat sound Acquisition System for Cardiac Assessment
 
 ## 📌 Project Overview
