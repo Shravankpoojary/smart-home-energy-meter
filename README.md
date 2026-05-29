@@ -98,3 +98,75 @@ To maintain high-speed throughput without dropping real-time samples, data is pa
 ---
 
 ## 🧠 Digital Signal Processing & TinyML Pipeline
+
+Raw Signal ---> Analog Active Filter ---> 12-Bit ADC Sampling ---> Digital FIR Filters ---> Pan-Tompkins Algorithm
+|
+360-Sample Buffer Window
+|
+v
+Color-Coded Alert Screen <--- On-Device TFT Output <--- Float32 TensorFlow Lite Inference Engine
+
+
+### 1. Digital Signal Processing (DSP)
+* **50 Hz Notch Filter (ECG):** Removes powerline AC hum from the environment. Implemented on the STM32 via an **81-tap FIR configuration** with a stopband window spanning `48 Hz - 52 Hz`.
+* **40 Hz Low-Pass Filter (ECG):** Attenuates high-frequency muscle contractions and baseline artifact wander using an **81-tap low-pass filter** cutting off strictly at `40 Hz` to preserve the vital QRS complex.
+* **200 Hz Low-Pass Filter (PCG):** Blocks environmental cross-talk while passing the primary **"lub-dub" (S1/S2)** structural heart sounds via an **81-tap architecture** operating at a `1000 Hz` sampling rate.
+* **Adaptive Noise Cancellation (ANC):** Leverages a dual-microphone framework. One MAX4466 is encapsulated within the stethoscope chest piece, while a second standalone MAX4466 samples ambient noise to apply dynamic subtraction filtering.
+* **Pan-Tompkins Algorithm:** Executes real-time derivative squaring, moving-window integration, and an adaptive thresholding pipeline to isolate individual R-peaks for accurate heart rate calculation.
+
+### 2. TinyML Inference Configuration
+* **Dataset & Augmentation:** Trained on the standard **MIT-BIH Arrhythmia Database**. The training profiles were balanced using target noise injection, including Gaussian noise additions ($\sigma = 0.005-0.02$), random scaling ($85\% - 115\%$), and time-shifting to balance classes evenly.
+* **Target Classes:** Real-time multi-class classification tracking:
+  * **Normal Sinus Rhythm (N)**
+  * **Atrial Fibrillation (AFib)**
+  * **Atrial Flutter (AFL)**
+  * **Premature Ventricular Contraction (PVC)**
+* **Edge Quantization:** Full post-training integer-quantization reduces model allocation size, allowing it to execute within a sub-**60KB RAM** arena inside the ESP32's TFLite Micro runtime environment.
+
+---
+
+## 📈 Evaluation & Results
+* **High-Fidelity Waves:** Clean real-time ECG trace tracking and dynamic R-peak detection plots rendered directly to the local display module.
+* **Validated Classification:** Proven capability to isolate high-probability events on edge devices (e.g., identifying Atrial Fibrillation anomalies with distinct confidence index values during testing loops).
+* **Power Savings:** Successfully triggers ultra-low-power idle states via the collaborative inter-MCU sleep timer loop, instantly waking on any button-based hardware interrupt.
+
+---
+
+## ⚙️ Setup & Deployment Instructions
+
+### 1. STM32 Primary (DSP Master Core)
+1. Open the firmware directory using **STM32CubeIDE** or **Arduino IDE** (with the `STM32duino` core installed).
+2. Configure clock parameters to run the ARM Cortex-M4 core at full processing capacity.
+3. Flash the code onto the **Nucleo-F446RE** development board.
+4. Open the serial console at `115200 baud` to verify real-time 12-bit ADC digitization and packet streaming output.
+
+### 2. ESP32 Secondary (TinyML & UI Core)
+1. Open the ESP32 firmware sketch within the Arduino IDE.
+2. Ensure the required libraries are installed:
+   * `TensorFlowLite_ESP32` (TFLite Micro Runtime)
+   * `Adafruit_ILI9341` & `Adafruit_GFX` (for the SPI-TFT display framework)
+3. Confirm that your pre-compiled, quantized model array file (`model_data.h`) is linked inside the same directory.
+4. Select **NodeMCU-32S** (or your target ESP32 board variation) and flash the firmware.
+
+---
+
+## 👥 Core Project Team
+* **Shravan K Poojary** (USN: 4VP22EC049) - Electronics & Communication Engineering
+* **Kaushik NG** (USN: 4VP22EC022) - Electronics & Communication Engineering
+* **Charith B** (USN: 4VP22EC013) - Electronics & Communication Engineering
+* **Pruthviraj** (USN: 4VP22EC040) - Electronics & Communication Engineering
+
+**Project Mentor:** Prof. Mahabaleshwara Bhat P (Assistant Professor, Dept. of ECE, VCET Puttur)
+
+---
+
+## 🎯 Project Demonstration
+
+<p align="center">
+  <b>▶️ CLICK THE IMAGE BELOW TO WATCH THE VIDEO DEMONSTRATION</b><br><br>
+  <a href="https://youtu.be/CDvIj5JJK60">  
+    <img width="2774" height="1536" alt="Project Demonstration Video Link" src="https://github.com/user-attachments/assets/039580f7-abfa-4294-b891-45bff2db7d14" />
+  </a>
+  <br>
+  <em>YouTube video showing a real-time walkthrough and analytical performance of the Cardiac AI Edge system.</em>
+</p>
