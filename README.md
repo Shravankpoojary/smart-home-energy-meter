@@ -140,14 +140,14 @@ Color-Coded Alert Screen <--- On-Device TFT Output <--- Float32 TensorFlow Lite 
 
 ### Model Performance Metrics
 <p align="center">
-  <img width="100%" alt="Confusion Matrix & Training Metrics" src="https://github.com/user-attachments/assets/074a74fd-e4a8-4819-80fd-6fd80146f6dd" />
+<img width="1318" height="690" alt="Screenshot 2026-03-16 165128" src="https://github.com/user-attachments/assets/05b73c0c-2c46-49f6-b1eb-2735b1cad4bc" />
   <br>
   <em>Figure 4: Quantized TinyML model validation results showing Confusion Matrix classification tracking and Epoch training progress.</em>
 </p>
 
 ### Live Diagnosis Telemetry Walkthrough
 <p align="center">
-  <img width="100%" alt="Live Classification Signal Outputs" src="https://github.com/user-attachments/assets/64767f99-77fc-4753-91fd-b251d501cf83" />
+<img width="1507" height="701" alt="Screenshot 2026-03-16 231528" src="https://github.com/user-attachments/assets/d4cc39e2-bdb4-4a7b-8277-2be24acae44b" />
   <br>
   <em>Figure 5: Live ECG real-time tracking waveforms along with on-device risk assessment probability matrix indicators.</em>
 </p>
