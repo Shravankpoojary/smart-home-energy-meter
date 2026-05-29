@@ -90,7 +90,7 @@ To maintain high-speed throughput without dropping real-time samples, data is pa
 
 ### Hardware Setup Snapshot
 <p align="center">
-  <img width="4080" height="1836" alt="Cardiac Analyzer Prototype Layout" src="YOUR_HARDWARE_SNAPSHOT_IMAGE_URL_HERE" />
+<img width="1051" height="839" alt="Screenshot 2026-05-29 150419" src="https://github.com/user-attachments/assets/99678392-53c6-4065-8da0-6bcb807cd165" />
   <br>
   <em>Figure 2: Physical hardware implementation showing the integrated STM32 Nucleo, ESP32 processing core, sensor arrays, and local TFT interface display.</em>
 </p>
