@@ -83,21 +83,21 @@ To maintain high-speed throughput without dropping real-time samples, data is pa
 
 ### Block Diagram
 <p align="center">
-  <img width="100%" alt="Screenshot 2026-05-29 145706" src="https://github.com/user-attachments/assets/01c6eeb2-34c7-48be-8a3d-26998c597620" />
+  <img width="750" alt="Screenshot 2026-05-29 145706" src="https://github.com/user-attachments/assets/01c6eeb2-34c7-48be-8a3d-26998c597620" />
   <br>
   <em>Figure 1: Comprehensive dual-MCU hardware architecture and signal processing routing pipeline.</em>
 </p>
 
 ### Hardware Setup Snapshot
 <p align="center">
-  <img width="100%" alt="Screenshot 2026-05-29 150419" src="https://github.com/user-attachments/assets/99678392-53c6-4065-8da0-6bcb807cd165" />
+  <img width="600" alt="Screenshot 2026-05-29 150419" src="https://github.com/user-attachments/assets/99678392-53c6-4065-8da0-6bcb807cd165" />
   <br>
   <em>Figure 2: Physical hardware implementation showing the integrated STM32 Nucleo, ESP32 processing core, sensor arrays, and local TFT interface display.</em>
 </p>
 
 ### Signal Hardware Interface & Schematic Overview
 <p align="center">
-  <img width="100%" alt="Circuit Schematic & Interface Layout" src="https://github.com/user-attachments/assets/2d73dd68-23a7-462b-9587-d647493cce77" />
+  <img width="750" alt="Circuit Schematic & Interface Layout" src="https://github.com/user-attachments/assets/2d73dd68-23a7-462b-9587-d647493cce77" />
   <br>
   <em>Figure 3: Inter-MCU serial routing layout, active amplification schematic, and display interface pinning configuration.</em>
 </p>
@@ -136,47 +136,45 @@ Color-Coded Alert Screen <--- On-Device TFT Output <--- Float32 TensorFlow Lite 
 
 ### Model Performance Metrics
 <p align="center">
-  <img width="100%" alt="Screenshot 2026-03-16 160604" src="https://github.com/user-attachments/assets/75f343c0-fdcc-4bc9-8fd8-32ae14c51f46" />
+  <img width="700" alt="Screenshot 2026-03-16 160604" src="https://github.com/user-attachments/assets/75f343c0-fdcc-4bc9-8fd8-32ae14c51f46" />
   <br>
   <em>Figure 4: Quantized TinyML model validation results showing Confusion Matrix classification tracking and Epoch training progress.</em>
 </p>
 
 <p align="center">
-  <img width="100%" alt="Screenshot 2026-03-16 165128" src="https://github.com/user-attachments/assets/b7f2906e-4b25-42e1-84ed-f3dec2aa77f6" />
+  <img width="700" alt="Screenshot 2026-03-16 165128" src="https://github.com/user-attachments/assets/b7f2906e-4b25-42e1-84ed-f3dec2aa77f6" />
   <br>
   <em>Figure 4: Quantized TinyML model validation results showing Confusion Matrix classification tracking and Epoch training progress.</em>
 </p>
 
 ### Live Diagnosis Telemetry Walkthrough
 <p align="center">
-  <img width="100%" alt="Screenshot 2026-03-16 231528" src="https://github.com/user-attachments/assets/d4cc39e2-bdb4-4a7b-8277-2be24acae44b" />
+  <img width="750" alt="Screenshot 2026-03-16 231528" src="https://github.com/user-attachments/assets/d4cc39e2-bdb4-4a7b-8277-2be24acae44b" />
   <br>
   <em>Figure 5: Live ECG real-time tracking waveforms along with on-device risk assessment probability matrix indicators.</em>
 </p>
 
 ### Edge Telemetry Stream & Console Logging
 <p align="center">
-  <img width="100%" alt="Screenshot 2026-03-17 225311" src="https://github.com/user-attachments/assets/548b5051-fadd-460f-84b5-63cc18f4d442" />
-  <br>
-  <em>Figure 6: High-speed UART frame transmissions showing continuous streaming logs and inference state outcomes.</em>
-</p>
-
-### Edge Telemetry Stream & Console Logging
-<p align="center">
-  <img width="100%" alt="Screenshot 2026-03-17 224932" src="https://github.com/user-attachments/assets/32c7cdb9-127e-40e5-b0b5-186144adec37" />
-  <br>
-  <em>Figure 6: High-speed UART frame transmissions showing continuous streaming logs and inference state outcomes.</em>
-</p>
-
-### Edge Telemetry Stream & Console Logging
-<p align="center">
-  <img width="100%" alt="Screenshot 2026-03-17 225159" src="https://github.com/user-attachments/assets/cc17e351-0f86-4715-a325-4a2c04969496" />
+  <img width="450" alt="Screenshot 2026-03-17 225311" src="https://github.com/user-attachments/assets/548b5051-fadd-460f-84b5-63cc18f4d442" />
   <br>
   <em>Figure 6: High-speed UART frame transmissions showing continuous streaming logs and inference state outcomes.</em>
 </p>
 
 <p align="center">
-  <img width="100%" alt="Screenshot 2026-03-17 225036" src="https://github.com/user-attachments/assets/2954d73b-c9da-4e05-8a87-9bebcec7e9a1" />
+  <img width="450" alt="Screenshot 2026-03-17 224932" src="https://github.com/user-attachments/assets/32c7cdb9-127e-40e5-b0b5-186144adec37" />
+  <br>
+  <em>Figure 6: High-speed UART frame transmissions showing continuous streaming logs and inference state outcomes.</em>
+</p>
+
+<p align="center">
+  <img width="450" alt="Screenshot 2026-03-17 225159" src="https://github.com/user-attachments/assets/cc17e351-0f86-4715-a325-4a2c04969496" />
+  <br>
+  <em>Figure 6: High-speed UART frame transmissions showing continuous streaming logs and inference state outcomes.</em>
+</p>
+
+<p align="center">
+  <img width="450" alt="Screenshot 2026-03-17 225036" src="https://github.com/user-attachments/assets/2954d73b-c9da-4e05-8a87-9bebcec7e9a1" />
   <br>
   <em>Figure 6: High-speed UART frame transmissions showing continuous streaming logs and inference state outcomes.</em>
 </p>
@@ -220,7 +218,7 @@ Color-Coded Alert Screen <--- On-Device TFT Output <--- Float32 TensorFlow Lite 
 <p align="center">
   <b>▶️ CLICK THE IMAGE BELOW TO WATCH THE VIDEO DEMONSTRATION</b><br><br>
   <a href="https://youtu.be/CDvIj5JJK60">  
-    <img width="100%" alt="Project Demonstration Video Link" src="https://github.com/user-attachments/assets/039580f7-abfa-4294-b891-45bff2db7d14" />
+    <img width="750" alt="Project Demonstration Video Link" src="https://github.com/user-attachments/assets/039580f7-abfa-4294-b891-45bff2db7d14" />
   </a>
   <br>
   <em>YouTube video showing a real-time walkthrough and analytical performance of the Cardiac AI Edge system.</em>
