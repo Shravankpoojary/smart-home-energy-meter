@@ -170,7 +170,7 @@ All values are scaled ×100 and sent as 4-byte binary frames at 9600 baud.
 <p align="center">
   <b>▶️ CLICK THE IMAGE BELOW TO WATCH THE VIDEO DEMONSTRATION</b><br><br>
   <a href="https://youtu.be/mwZI8RePCFI">
-    <img width="100%" alt="Smart Home Energy Meter Major Project Demo" src="https://img.youtube.com/vi/mwZI8RePCFI/maxresdefault.jpg" />
+<img width="3064" height="1376" alt="Firefly (30)" src="https://github.com/user-attachments/assets/8aa165c7-01ca-41dd-99e1-0a6bfb0cd3f6" />
   </a>
   <br>
   <em>YouTube video showing a full technical walkthrough of the Major Project: Smart Home Energy Meter, illustrating the integration of STM32 processing and ESP8266 cloud telemetry.</em>
