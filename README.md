@@ -1,4 +1,4 @@
-# smart-home-energy-meter
+# Smart-home-energy-meter
 ### Major Project | ACS712 + STM32 Nucleo + ESP8266 + ThingSpeak
 
 A smart AC energy monitor built with an STM32F446RE Nucleo board, ACS712 Hall-effect sensor, and an ESP8266 module (via AT commands) for local LCD visualization and cloud data logging.
