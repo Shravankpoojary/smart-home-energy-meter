@@ -142,7 +142,7 @@ All values are scaled ×100 and sent as 4-byte binary frames at 9600 baud.
 ## STM32CubeIDE — Pinout & Configuration
 
 <p align="center">
-  <img width="100%" alt="STM32CubeIDE Pinout and Configuration" src="https://github.com/user-attachments/assets/1781253997994_image" />
+<img width="1919" height="990" alt="image" src="https://github.com/user-attachments/assets/8ff22aff-1cf9-4070-860a-9994a9ad54e3" />
   <br>
   <em>Figure 4: STM32CubeIDE Device Configuration Tool showing the STM32F446RETx pinout view with USART2 configured in asynchronous mode at 115200 baud, along with I2C1, USART1, and USART3 peripheral assignments.</em>
 </p>
@@ -150,7 +150,7 @@ All values are scaled ×100 and sent as 4-byte binary frames at 9600 baud.
 ## STM32CubeIDE — Firmware & Build
 
 <p align="center">
-  <img width="100%" alt="STM32CubeIDE main.c source and build console" src="https://github.com/user-attachments/assets/1781254011576_image" />
+<img width="1413" height="752" alt="Gemini_Generated_Image_a0zt2a0zt2a0zt2a (1)" src="https://github.com/user-attachments/assets/0771e75c-274f-4fd7-bef5-d86bf3870614" />
   <br>
   <em>Figure 5: STM32CubeIDE showing the main.c source file with key <code>#define</code> parameters (ADC resolution, VREF, sensitivity, mains voltage, samples, noise threshold, and packet headers) alongside the build console output and live USART2 serial monitor readings.</em>
 </p>
@@ -160,7 +160,7 @@ All values are scaled ×100 and sent as 4-byte binary frames at 9600 baud.
 **STM32 + ESP8266 Serial Monitors side by side:**
 
 <p align="center">
-  <img width="100%" alt="STM32CubeIDE and Arduino IDE serial monitors side by side" src="https://github.com/user-attachments/assets/1781254005517_image" />
+<img width="1024" height="459" alt="image" src="https://github.com/user-attachments/assets/19731504-4c12-434b-8872-3a7aea6a7172" />
   <br>
   <em>Figure 6: Side-by-side view of STM32CubeIDE (left) and Arduino IDE ESP8266 serial monitor (right), showing synchronized RMS current, peak current, and apparent power readings along with successful ThingSpeak upload confirmations.</em>
 </p>
