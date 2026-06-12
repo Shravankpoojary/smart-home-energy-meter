@@ -4,7 +4,7 @@
 A smart AC energy monitor built with an STM32F446RE Nucleo board, ACS712 Hall-effect sensor, and an ESP8266 module (via AT commands) for local LCD visualization and cloud data logging.
 
 ## Overview
-A real-time AC mains current monitoring system that measures the current drawnby a home appliance using an ACS712 Hall-effect current sensor. The STM32F446RE Nucleo board processes 1000 ADC samples per cycle to compute RMS current, peakcurrent, and apparent power. Readings are displayed live on a 16×2 I²C LCD anduploaded to the ThingSpeak cloud platform every 20 seconds via an ESP8266 NodeMCU.
+A real-time AC mains current monitoring system that measures the current drawn by a home appliance using an ACS712 Hall-effect current sensor. The STM32F446RE Nucleo board processes 1000 ADC samples per cycle to compute RMS current, peak current, and apparent power. Readings are displayed live on a 16×2 I²C LCD and uploaded to the ThingSpeak cloud platform every 20 seconds via an ESP8266 NodeMCU.
 
 ## How It Works
 1. ACS712 sensor clamps around the live wire and outputs an analog voltage proportional to current
@@ -139,14 +139,38 @@ All values are scaled ×100 and sent as 4-byte binary frames at 9600 baud.
    - Field 3: Apparent Power (VA)
 3. Copy the Channel ID and Write API Key into the ESP8266 sketch
 
+## STM32CubeIDE — Pinout & Configuration
+
+<p align="center">
+  <img width="100%" alt="STM32CubeIDE Pinout and Configuration" src="https://github.com/user-attachments/assets/1781253997994_image" />
+  <br>
+  <em>Figure 4: STM32CubeIDE Device Configuration Tool showing the STM32F446RETx pinout view with USART2 configured in asynchronous mode at 115200 baud, along with I2C1, USART1, and USART3 peripheral assignments.</em>
+</p>
+
+## STM32CubeIDE — Firmware & Build
+
+<p align="center">
+  <img width="100%" alt="STM32CubeIDE main.c source and build console" src="https://github.com/user-attachments/assets/1781254011576_image" />
+  <br>
+  <em>Figure 5: STM32CubeIDE showing the main.c source file with key <code>#define</code> parameters (ADC resolution, VREF, sensitivity, mains voltage, samples, noise threshold, and packet headers) alongside the build console output and live USART2 serial monitor readings.</em>
+</p>
+
 ## Expected Output
+
+**STM32 + ESP8266 Serial Monitors side by side:**
+
+<p align="center">
+  <img width="100%" alt="STM32CubeIDE and Arduino IDE serial monitors side by side" src="https://github.com/user-attachments/assets/1781254005517_image" />
+  <br>
+  <em>Figure 6: Side-by-side view of STM32CubeIDE (left) and Arduino IDE ESP8266 serial monitor (right), showing synchronized RMS current, peak current, and apparent power readings along with successful ThingSpeak upload confirmations.</em>
+</p>
 
 **STM32 Serial Monitor and ESP8266 Serial Monitor (115200 baud):**
 
 <p align="center">
   <img width="100%" alt="STM32 and ESP8266 Serial Monitor Logs" src="https://github.com/user-attachments/assets/4962d468-ea57-4052-a725-d3423b7d338d" />
   <br>
-  <em>Figure 4: Serial monitor outputs from both the STM32 and ESP8266 modules displaying the parsed RMS current, peak current, and apparent power.</em>
+  <em>Figure 7: Serial monitor outputs from both the STM32 and ESP8266 modules displaying the parsed RMS current, peak current, and apparent power.</em>
 </p>
 
 **ThingSpeak Cloud Dashboard:**
@@ -154,7 +178,7 @@ All values are scaled ×100 and sent as 4-byte binary frames at 9600 baud.
 <p align="center">
 <img width="4080" height="1836" alt="IMG_20260501_160446-2" src="https://github.com/user-attachments/assets/170c9b94-3bed-46a5-8fbb-e1e4ddf70c0c" />
    <br>
-  <em>Figure 5: ThingSpeak cloud dashboard visualizing real-time telemetry from the ESP8266, including live gauges for RMS current, Peak current, and Apparent Power.</em>
+  <em>Figure 8: ThingSpeak cloud dashboard visualizing real-time telemetry from the ESP8266, including live gauges for RMS current, Peak current, and Apparent Power.</em>
 </p>
 
 **LCD Display:**
@@ -162,7 +186,7 @@ All values are scaled ×100 and sent as 4-byte binary frames at 9600 baud.
 <p align="center">
   <img width="100%" alt="16x2 LCD Display showing RMS and Power" src="https://github.com/user-attachments/assets/66478931-dd2a-457c-ac2d-4bbfea7b868e" />
   <br>
-  <em>Figure 6: Local 16x2 I2C LCD interface displaying real-time RMS current (A), Peak current (A), and Apparent Power (VA).</em>
+  <em>Figure 9: Local 16x2 I2C LCD interface displaying real-time RMS current (A), Peak current (A), and Apparent Power (VA).</em>
 </p>
 
 ## Project Demonstration
@@ -175,5 +199,3 @@ All values are scaled ×100 and sent as 4-byte binary frames at 9600 baud.
   <br>
   <em>YouTube video showing a full technical walkthrough of the Major Project: Smart Home Energy Meter, illustrating the integration of STM32 processing and ESP8266 cloud telemetry.</em>
 </p>
-
-
