@@ -160,7 +160,7 @@ All values are scaled ×100 and sent as 4-byte binary frames at 9600 baud.
 **STM32 + ESP8266 Serial Monitors side by side:**
 
 <p align="center">
-<img width="1024" height="459" alt="image" src="https://github.com/user-attachments/assets/19731504-4c12-434b-8872-3a7aea6a7172" />
+<img width="6128" height="2752" alt="STM32_CUBEIDE_ARDUINO_IDE1" src="https://github.com/user-attachments/assets/59228389-6618-4422-8d03-8f04dbbddbf7" />
   <br>
   <em>Figure 6: Side-by-side view of STM32CubeIDE (left) and Arduino IDE ESP8266 serial monitor (right), showing synchronized RMS current, peak current, and apparent power readings along with successful ThingSpeak upload confirmations.</em>
 </p>
